@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <div className="bg-white">
-      <div className="bg-gray-900 py-16 text-white text-center">
+      <div className="bg-primary py-16 text-white text-center">
         <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
         <p className="text-gray-400 max-w-xl mx-auto">
           Have a project in mind? Let's build something great together.
