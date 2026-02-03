@@ -17,17 +17,12 @@ const Services = () => {
       features: ['iOS & Android', 'Cross-Platform', 'UI/UX Focused', 'App Store Publishing']
     },
     {
-      title: 'UI/UX Design',
+      title: 'Graphics Design',
       icon: <PenTool className="h-10 w-10 text-pink-600" />,
       desc: 'User-centric design that creates intuitive and engaging digital experiences. We focus on aesthetics, usability, and brand consistency.',
       features: ['Wireframing', 'Prototyping', 'User Research', 'Brand Identity']
     },
-    {
-      title: 'API & Backend',
-      icon: <Server className="h-10 w-10 text-green-600" />,
-      desc: 'Robust backend solutions and API integrations to power your applications. We ensure security, scalability, and smooth data flow.',
-      features: ['REST & GraphQL', 'Database Design', 'Cloud Deployment', 'Security Audit']
-    },
+
     {
       title: 'E-commerce Solutions',
       icon: <ShoppingCart className="h-10 w-10 text-orange-600" />,

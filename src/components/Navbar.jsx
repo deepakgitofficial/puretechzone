@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import Logo from './assets/images/Pure-Tech-Zone1.png';
+import Logo from './assets/images/ptz-v2.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
+    { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src={Logo} alt="Pure Tech Zone" className="h-10 w-auto" />
+            <img src={Logo} alt="Pure Tech Zone" className=" w-auto" style={{ height: '60px' }} />
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               {/* Pure Tech Zone */}
             </span>

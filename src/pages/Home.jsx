@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const services = [
-    { title: 'Web Development', icon: <Monitor className="h-8 w-8 text-primary" />, desc: 'Custom websites built with modern technologies like React, Node.js, and more.' },
+    { title: 'Website Development', icon: <Monitor className="h-8 w-8 text-primary" />, desc: 'Custom websites built with modern technologies like React, Node.js, and more.' },
     { title: 'App Development', icon: <Smartphone className="h-8 w-8 text-purple-600" />, desc: 'Native and cross-platform mobile applications for iOS and Android.' },
-    { title: 'UI/UX Design', icon: <PenTool className="h-8 w-8 text-pink-600" />, desc: 'User-centric designs that ensure a seamless and engaging experience.' },
-    { title: 'Backend Solutions', icon: <Server className="h-8 w-8 text-green-600" />, desc: 'Robust API integration and scalable server-side architectures.' },
+    { title: 'Graphics Design', icon: <PenTool className="h-8 w-8 text-pink-600" />, desc: 'Custom graphics and UI/UX design for your digital products.' },
+    { title: 'Websites  Maintenance', icon: <Server className="h-8 w-8 text-green-600" />, desc: 'Custom websites maintence with a focus on performance and security.' },
   ];
 
   const technologies = [
-    'React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'Next.js', 'PostgreSQL', 'AWS', 'Docker'
+    'Wordpress', 'PHP', 'JavaScript', 'React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'Next.js', 'MongoDB', 'MySQL', 'React Native', 'Flutter', 'GraphQL', 'Shopify', 'WooCommerce',
   ];
 
   return (

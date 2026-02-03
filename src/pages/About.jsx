@@ -5,10 +5,10 @@ const About = () => {
   return (
     <div className="bg-white">
       {/* Header */}
-      <div className="bg-gray-50 py-16">
+      <div className="bg-primary py-16 text-white text-center">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">About Pure Tech Zone</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold mb-4">About Pure Tech Zone</h1>
+          <p className="ext-primary-foreground/90 max-w-2xl mx-auto">
             Innovating the future, one solution at a time.
           </p>
         </div>

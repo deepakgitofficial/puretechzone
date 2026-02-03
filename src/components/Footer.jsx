@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-import Logo from './assets/images/Pure-Tech-Zone1.png';
+import Logo from './assets/images/ptz-footer.png';
 
 const Footer = () => {
   return (
@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <img src={Logo} alt="Pure Tech Zone" className="h-10 w-auto" />
-              <span className="text-xl font-bold">Pure Tech Zone</span>
+            <div className="flex items-center mb-2">
+              <img src={Logo} alt="Pure Tech Zone" className=" w-auto h-24" />
+              {/* <span className="text-xl font-bold">Pure Tech Zone</span> */}
             </div>
             <p className="text-gray-400 mb-4 text-sm">
               Building smart digital solutions for the future. We transform ideas into scalable technology.

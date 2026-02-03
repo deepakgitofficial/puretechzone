@@ -41,7 +41,7 @@ const Contact = () => {
     <div className="bg-white">
       <div className="bg-primary py-16 text-white text-center">
         <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-        <p className="text-gray-400 max-w-xl mx-auto">
+        <p className="text-gray-100 max-w-xl mx-auto">
           Have a project in mind? Let's build something great together.
         </p>
       </div>
