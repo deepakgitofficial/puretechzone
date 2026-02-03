@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import sevenFlorist from './assets/images/sevenFolorist.webp';
+import seoMalaysia from './assets/images/seoMalesiya.webp';
+import one from './assets/images/one.webp';
+import mover from './assets/images/mover.webp';
+import hotel from './assets/images/hotel.webp';
+import holiday from './assets/images/holiday.webp';
+import alpha from './assets/images/alpha.webp';
+import afson from './assets/images/afson.webp';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { projects } from '../data/LocalData';
-import { motion } from 'framer-motion';
 
-const OurProjects = () => {
+const LatestProjects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [hoveredProject, setHoveredProject] = useState(null);
+
 
 
   const categories = ['all', 'E-commerce', 'Marketing', 'Corporate', 'Service', 'Hospitality', 'Travel', 'Technology'];
@@ -13,62 +22,10 @@ const OurProjects = () => {
   const filteredProjects = activeFilter === 'all'
     ? projects
     : projects.filter(project => project.category === activeFilter);
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
-      {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="relative overflow-hidden bg-gradient-to-r from-[#12b2a6] via-[#0e8f86] to-[#0a6b64] text-white py-24 px-4"
-      >
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-overlay filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <motion.h1
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-200"
-          >
-            Our Projects
-          </motion.h1>
-          <motion.p
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed"
-          >
-            Discover our portfolio of innovative solutions that transform businesses and create exceptional digital experiences
-          </motion.p>
-
-          {/* Animated Stats */}
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="grid grid-cols-3 gap-8 max-w-3xl mx-auto mt-12"
-          >
-            {[
-              { number: '50+', label: 'Projects Completed' },
-              { number: '40+', label: 'Happy Clients' },
-              { number: '100%', label: 'Satisfaction Rate' }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2">{stat.number}</div>
-                <div className="text-sm md:text-base text-gray-200">{stat.label}</div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-      </motion.section>
-
-      {/* Filter Section */}
+    <>
       <section className="max-w-7xl mx-auto px-4 py-12">
+        <h2 className='text-3xl text-center font-bold text-gray-900 mb-8 '>Latest Projects</h2>
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -175,36 +132,9 @@ const OurProjects = () => {
           </motion.div>
         )}
       </section>
+    </>
+  )
+}
 
-      {/* CTA Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-auto px-4 py-20"
-      >
-        <div className="bg-gradient-to-r from-[#12b2a6] via-[#0e8f86] to-[#0a6b64] rounded-3xl p-12 md:p-16 text-center relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full mix-blend-overlay filter blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-overlay filter blur-3xl"></div>
-          </div>
+export default LatestProjects
 
-          <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Start Your Project?
-            </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-              Let's collaborate and bring your vision to life with our expertise and dedication
-            </p>
-            <button className="bg-white text-[#12b2a6] px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-2xl">
-              Get In Touch
-            </button>
-          </div>
-        </div>
-      </motion.section>
-    </div>
-  );
-};
-
-export default OurProjects;

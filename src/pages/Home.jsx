@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { Monitor, Smartphone, PenTool, Server, ArrowRight, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import LatestProjects from '../components/LatestProjects';
 
 const Home = () => {
   const services = [
@@ -18,7 +19,8 @@ const Home = () => {
   return (
     <div className="bg-white">
       <Hero />
-
+      
+      <LatestProjects />
       {/* Services Preview */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

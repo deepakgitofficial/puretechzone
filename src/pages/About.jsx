@@ -28,7 +28,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Pure Tech Zone is a forward-thinking technology agency dedicated to setting new standards in the digital world. Founded on the principles of innovation and excellence, we specialize in delivering high-quality web and mobile solutions that empower businesses to scale.
+                <strong> Pure Tech Zone</strong> is a forward-thinking technology agency dedicated to setting new standards in the digital world. Founded on the principles of innovation and excellence, we specialize in delivering high-quality web and mobile solutions that empower businesses to scale.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Our team consists of passionate developers, designers, and strategists who believe in the power of technology to solve real-world problems. We don't just build apps; we build relationships and long-term success for our clients.
