@@ -21,8 +21,8 @@ const LatestProjects = () => {
     },
     mobile: {
       breakpoint: { max: 640, min: 0 },
-      items: 3,
-
+      items: 1,
+      partialVisibilityGutter: 60,
     },
   };
   const responsiveProject = {
@@ -73,7 +73,7 @@ const LatestProjects = () => {
         swipeable
         draggable
         arrows={false}
-        // partialVisible
+        partialVisible
         containerClass="pb-6 "
         itemClass="px-2"
       >
