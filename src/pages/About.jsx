@@ -16,43 +16,72 @@ const About = () => {
       </div>
 
       {/* Intro Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex  items-center">
-            <div className=' md:w-1/3 '>
-              <img
-                src={dpkImg}
-                alt="Team collaboration"
-                className="rounded-lg shadow-xl max-w-md mx-auto"
-              />
+          <div className="flex flex-col md:flex-row items-center gap-10">
+
+            {/* Image */}
+            <div className="w-full md:w-1/3 flex justify-center ">
+              <div className=' pb-1 rounded-full bg-primary-dark border border-primary-dark '>
+
+                <img
+                  src={dpkImg}
+                  alt="Founder - Pure Tech Zone"
+                  className=" w-[160px] h-[160px]  sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px]   rounded-[300px] shadow-xl object-cover "
+                />
+              </div>
             </div>
-            <div className='md:w-2/3'>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Welcome to Pure Tech Zone</h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Hi, I’m <strong> Deepak Kashyap,</strong>  founder and web developer behind Pure Tech Zone. I help businesses, startups, and individuals build professional, responsive, and user-friendly websites that strengthen their online presence. From design to development, every project is handled personally with a focus on quality, affordability, and client satisfaction.
+
+
+            {/* Content */}
+            <div className="w-full md:w-2/3 text-center md:text-left">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Welcome to Pure Tech Zone
+              </h2>
+
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm sm:text-base">
+                Hi, I’m <strong>Deepak Kashyap</strong>, founder and web developer behind Pure Tech Zone.
+                I help businesses, startups, and individuals build professional, responsive,
+                and user-friendly websites that strengthen their online presence.
               </p>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                My goal is to help businesses, startups, and individuals build a strong online presence with affordable, professional, and customized web solutions.
+
+              <p className="text-gray-600 mb-6 leading-relaxed text-sm sm:text-base">
+                My goal is to help businesses, startups, and individuals build a strong
+                online presence with affordable, professional, and customized web solutions.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <span className="text-gray-700">Responsive, and user-friendly websites</span>
+
+              {/* Features */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span className="text-gray-700 text-sm sm:text-base">
+                    Responsive & user-friendly websites
+                  </span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <span className="text-gray-700">Affordable & high-quality web solutions</span>
+
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span className="text-gray-700 text-sm sm:text-base">
+                    Affordable & high-quality web solutions
+                  </span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <span className="text-gray-700">Provide reliable support</span>
+
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span className="text-gray-700 text-sm sm:text-base">
+                    Reliable ongoing support
+                  </span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <span className="text-gray-700">Long-term collaboration</span>
+
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-1" />
+                  <span className="text-gray-700 text-sm sm:text-base">
+                    Long-term collaboration
+                  </span>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
