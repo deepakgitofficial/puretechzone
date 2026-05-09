@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-start space-x-4">
+              {/* <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-lg">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                   <h4 className="font-semibold text-gray-900">Email Us</h4>
                   <p className="text-gray-600">deepsoftskills@gmail.com</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-start space-x-4">
                 <div className="bg-purple-100 p-3 rounded-lg">

@@ -5,21 +5,21 @@ import Logo from './assets/images/ptz-footer.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-8">
+    <footer className="bg-gray-900 text-white  pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
           <div>
             <div className="flex items-center mb-2">
               <img src={Logo} alt="Pure Tech Zone" className=" w-auto h-24" />
-              {/* <span className="text-xl font-bold">Pure Tech Zone</span> */}
+      
             </div>
             <p className="text-gray-400 mb-4 text-sm">
               Building smart digital solutions for the future. We transform ideas into scalable technology.
             </p>
           </div>
 
-          {/* Quick Links */}
+  
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Quick Links</h3>
             <ul className="space-y-2">
@@ -30,7 +30,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Contact Us</h3>
             <ul className="space-y-3">
@@ -49,7 +49,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media */}
+
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Follow Us</h3>
             <div className="flex space-x-4">
@@ -67,9 +67,9 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} Pure Tech Zone. All rights reserved.</p>
         </div>
       </div>

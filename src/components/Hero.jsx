@@ -99,7 +99,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-8 z-10">
             <h1 className="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
-              Smart Web Solutions for  <span className="text-primary">Modern Businesses</span>
+              We Build Websites That  <span className="text-primary">Grow Your Business</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
               We specialize in high-performance web applications and native mobile solutions. From concept to deployment, we build digital products that scale and engage.
